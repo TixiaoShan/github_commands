@@ -26,6 +26,10 @@
 
 3. push changes: `git push origin master`
 
+### Pull latest repositoray from remote
+
+1. 
+
 ### Set Username
 1. set Git username for every repository on your computer:
 
@@ -64,3 +68,4 @@ Turn on the credential helper so that Git will save your password in memory for 
 `git config --global credential.helper 'cache --timeout=3600'`
 
 
+s 
