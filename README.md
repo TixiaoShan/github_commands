@@ -29,6 +29,8 @@
 ### Pull new changes from remote
 
 1. 
+   
+   If you run into a merge conflict you cannot resolve, or if you decide to quit the merge, you can use `git merge --abort` to take the branch back to where it was in before you pulled.
 
 ### Set Username
 1. set Git username for every repository on your computer:
