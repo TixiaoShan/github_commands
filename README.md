@@ -28,7 +28,7 @@
 
 ### Pull new changes from remote
 
-1. 
+1. `git pull` is a convenient shortcut for completing both `git fetch` and `git merge` in the same command
    
    If you run into a merge conflict you cannot resolve, or if you decide to quit the merge, you can use `git merge --abort` to take the branch back to where it was in before you pulled.
 
