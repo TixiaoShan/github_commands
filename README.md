@@ -68,3 +68,15 @@ Turn on the credential helper so that Git will save your password in memory for 
 2. Set the cache to timeout after 1 hour (setting is in seconds):
 
     `git config --global credential.helper 'cache --timeout=3600'`
+
+### Other commands
+
+1. Delete file or folder:
+
+    `git rm -r file-name.txt or folder` then `git commit -m "Remove file or folder"`
+
+2. Check status:
+
+    `git status`
+
+3.
