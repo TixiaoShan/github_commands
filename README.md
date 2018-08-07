@@ -79,4 +79,4 @@ Turn on the credential helper so that Git will save your password in memory for 
 
     `git status`
 
-3.
+3. [Many other commands](https://github.com/joshnh/Git-Commands)
