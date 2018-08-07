@@ -8,7 +8,7 @@
 
 2. navigate to the directory and initialize: `git init`
 
-3. Add all the files: `git add .`
+3. Add the files in local repository and stages them for commit: `git add .`
 
 4. commit the files: `git commit -m "First commit"`
 
