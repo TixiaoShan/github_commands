@@ -26,7 +26,7 @@
 
 3. push changes: `git push origin master`
 
-### Pull latest repositoray from remote
+### Pull new changes from remote
 
 1. 
 
