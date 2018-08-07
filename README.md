@@ -18,6 +18,14 @@
 
 7. push changes: `git push origin master`
 
+### Push to repositoray after making changes
+
+1. Add the files in local repository and stages them for commit: `git add .`
+
+2. commit the files: `git commit -m "current commit"`
+
+3. push changes: `git push origin master`
+
 ### Set Username
 1. set Git username for every repository on your computer:
 
@@ -54,7 +62,5 @@ Turn on the credential helper so that Git will save your password in memory for 
 2. Set the cache to timeout after 1 hour (setting is in seconds):
 
 `git config --global credential.helper 'cache --timeout=3600'`
-
-### Push to repositoray after changes
 
 
