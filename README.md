@@ -12,7 +12,7 @@
 
 4. commit the files: `git commit -m "First commit"`
 
-5. add the URL: `git remote add origin remote repository URL`
+5. add the URL: `git remote add origin https://github.com/username/myproject.git`
 
 6. verify the new URL: `git remote -v`
 
