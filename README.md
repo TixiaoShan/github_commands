@@ -31,6 +31,11 @@
 1. `git pull` is a convenient shortcut for completing both `git fetch` and `git merge` in the same command
    
    If you run into a merge conflict you cannot resolve, or if you decide to quit the merge, you can use `git merge --abort` to take the branch back to where it was in before you pulled.
+   
+2. Force to overwrite local files:
+   `git fetch --all`
+   `git reset --hard origin/master`
+   `git pull origin master`
 
 ### Set Username
 1. set Git username for every repository on your computer:
