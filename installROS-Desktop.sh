@@ -102,7 +102,7 @@ sudo apt-get -y install cuda-9-0
 echo "${green}install cudnn...${reset}"
 # https://developer.nvidia.com/rdp/cudnn-download
 cd ~/Downloads
-tar -xzvf cudnn-9.0-linux-x64-v7.1.tgz
+tar -xzvf cudnn-9.0-linux-x64-v7.1.tgz # change the name as may have newer versions
 sudo cp cuda/include/cudnn.h /usr/local/cuda/include
 sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
 sudo chmod a+r /usr/local/cuda/include/cudnn.h
@@ -113,29 +113,28 @@ echo "export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH" >> ~/.bashr
 # Install jupyter notebook
 echo "${green}install jupyter ...${reset}"
 sudo apt -y install python-pip
-sudo pip install --upgrade pip
-
-#########################################################
-# Install tensorflow
-echo "${green}install tensorflow ...${reset}"
-sudo pip install -U --ignore-installed tensorflow-gpu
-sudo pip install keras
+pip install --upgrade pip
 
 #########################################################
 # Install Pytorch
 echo "${green}install pytorch ...${reset}"
-sudo pip install torch
-sudo pip install torchvision
+pip install --user torch
+pip install --user torchvision
 
-sudo pip install launchpadlib
-sudo pip install testresources
-sudo pip install jupyter
-sudo pip install imageio
-sudo pip install pandas
-sudo pip install scikit-image
-sudo pip uninstall numpy
-sudo pip install numpy==1.14.5
+pip install --user launchpadlib
+pip install --user testresources
+pip install --user jupyter
+pip install --user imageio
+pip install --user pandas
+pip install --user scikit-image
+pip uninstall numpy
+pip install --user numpy==1.14.5
 
+#########################################################
+# Install tensorflow
+echo "${green}install tensorflow ...${reset}"
+pip install --user -U --ignore-installed tensorflow-gpu
+pip install --user keras
 
 #########################################################
 echo "${green}sublime python autocompletion ...${reset}"
