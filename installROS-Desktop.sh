@@ -38,8 +38,8 @@ sudo apt-get install -y openssh-server
 #########################################################
 # ros ip setup
 echo "${green}ROS ip setup${reset}"
-echo "export ROS_MASTER_URI=http://192.168.0.101:11311" >> ~/.bashrc
-echo "export ROS_HOSTNAME=192.168.0.101" >> ~/.bashrc
+echo "export ROS_MASTER_URI=http://localhost:11311" >> ~/.bashrc
+echo "export ROS_HOSTNAME=localhost" >> ~/.bashrc
 
 #########################################################
 # Network Time Protocol
