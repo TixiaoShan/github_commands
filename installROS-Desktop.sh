@@ -67,7 +67,7 @@ wget -O ~/Downloads/dropbox.deb "https://www.dropbox.com/download?dl=packages/ub
 sudo gdebi dropbox.deb
 wget -O ~/Downloads/chrome.deb "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
 sudo gdebi chrome.deb
-wget -O ~/Downloads/sublime.deb "https://download.sublimetext.com/sublime-text_build-3126_amd64.deb"
+wget -O ~/Downloads/sublime.deb "https://download.sublimetext.com/sublime-text_build-3176_amd64.deb"
 sudo gdebi sublime.deb
 
 #########################################################
@@ -144,17 +144,17 @@ echo "${green}sublime python autocompletion ...${reset}"
 # package: andconda
 
 
-# Ryan Clark
-# Single User License
-# EA7E-812479
-# 2158A7DE B690A7A3 8EC04710 006A5EEB
-# 34E77CA3 9C82C81F 0DB6371B 79704E6F
-# 93F36655 B031503A 03257CCC 01B20F60
-# D304FA8D B1B4F0AF 8A76C7BA 0FA94D55
-# 56D46BCE 5237A341 CD837F30 4D60772D
-# 349B1179 A996F826 90CDB73C 24D41245
-# FD032C30 AD5E7241 4EAA66ED 167D91FB
-# 55896B16 EA125C81 F550AF6B A6820916
+#sgbteam
+#Single User License
+#EA7E-1153259
+#8891CBB9 F1513E4F 1A3405C1 A865D53F
+#115F202E 7B91AB2D 0D2A40ED 352B269B
+#76E84F0B CD69BFC7 59F2DFEF E267328F
+#215652A3 E88F9D8F 4C38E3BA 5B2DAAE4
+#969624E7 DC9CD4D5 717FB40C 1B9738CF
+#20B3C4F1 E917B5B3 87C38D9C ACCE7DD8
+#5F7EF854 86B9743C FADC04AA FB0DA5C0
+#F913BE58 42FEA319 F954EFDD AE881E0B
 
 # Just go to Preferences -> Settings-User and add there: "update_check": false,
 
