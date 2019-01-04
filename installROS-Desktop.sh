@@ -113,6 +113,7 @@ echo "export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH" >> ~/.bashr
 # Install jupyter notebook
 echo "${green}install jupyter ...${reset}"
 sudo apt -y install python-pip
+sleep 1
 pip install --upgrade pip
 
 #########################################################
