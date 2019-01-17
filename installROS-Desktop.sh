@@ -165,3 +165,7 @@ echo "${green}sublime python autocompletion ...${reset}"
 # sudo blkid
 # sudo gedit /etc/fstab
 # UUID=CA009B90009B825D /media/ntfs ntfs rw,nosuid,nodev,noatime,allow_other 0 0
+
+########################################################
+# Edit ros kill timeout
+# /opt/ros/kinetic/lib/python2.7/dist-packages/roslaunch/nodeprocess.py
