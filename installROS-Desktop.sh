@@ -80,40 +80,11 @@ cd build
 cmake ..
 sudo make install -j8
 
-# #########################################################
-# echo "${green}Install Gazebo 9 ${reset}"
-# sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list'
-# wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
-# sudo apt-get update
-# sudo apt-get install -y ros-kinetic-gazebo9*
-
-#########################################################
-# Install CUDA 9.0
-echo "${green}install cuda 9.0...${reset}"
-cd ~/Downloads/
-wget -O ~/Downloads/cuda.deb "http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_9.0.176-1_amd64.deb"
-sudo dpkg -i cuda.deb
-sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub
-sudo apt-get update
-sudo apt-get -y install cuda-9-0
-
-#########################################################
-# Install cdDNN
-echo "${green}install cudnn...${reset}"
-# https://developer.nvidia.com/rdp/cudnn-download
-cd ~/Downloads
-tar -xzvf cudnn-9.0-linux-x64-v7.1.tgz # change the name as may have newer versions
-sudo cp cuda/include/cudnn.h /usr/local/cuda/include
-sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
-sudo chmod a+r /usr/local/cuda/include/cudnn.h
-sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
-echo "export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH" >> ~/.bashrc
-
 #########################################################
 # Install jupyter notebook
 echo "${green}install jupyter ...${reset}"
 sudo apt -y install python-pip
-sleep 1
+sleep 3
 pip install --upgrade pip
 
 #########################################################
@@ -138,13 +109,34 @@ pip install --user -U --ignore-installed tensorflow-gpu
 pip install --user keras
 
 #########################################################
-echo "${green}sublime python autocompletion ...${reset}"
-# Open command pallet (default: ctrl+shift+p)
-# Type package control install and select command Package Control: Install Package
-# package: bracket highlight
-# package: andconda
+echo "${green}Install Texworks and TexLive ...${reset}"
+sudo apt-get -y install texworks
+sudo apt-get -y install texlive-full
 
 
+#########################################################
+# Install CUDA 9.0
+echo "${green}install cuda 9.0...${reset}"
+cd ~/Downloads/
+wget -O ~/Downloads/cuda.deb "http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_9.0.176-1_amd64.deb"
+sudo dpkg -i cuda.deb
+sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub
+sudo apt-get update
+sudo apt-get -y install cuda-9-0
+
+#########################################################
+# Install cdDNN
+echo "${green}install cudnn...${reset}"
+# https://developer.nvidia.com/rdp/cudnn-download
+cd ~/Downloads
+tar -xzvf cudnn-9.0-linux-x64-v7.1.tgz # change the name as may have newer versions
+sudo cp cuda/include/cudnn.h /usr/local/cuda/include
+sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
+sudo chmod a+r /usr/local/cuda/include/cudnn.h
+sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
+echo "export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH" >> ~/.bashrc
+
+#########################################################
 #sgbteam
 #Single User License
 #EA7E-1153259
@@ -158,7 +150,6 @@ echo "${green}sublime python autocompletion ...${reset}"
 #F913BE58 42FEA319 F954EFDD AE881E0B
 
 # Just go to Preferences -> Settings-User and add there: "update_check": false,
-
 
 ########################################################
 # mount drive start up
