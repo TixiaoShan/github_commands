@@ -59,6 +59,7 @@ sudo apt-get install -y lm-sensors
 sudo apt-get install -y exfat-fuse
 sudo apt-get install -y exfat-utils
 sudo apt-get install -y terminator
+sudo apt-get install -y ffmpeg
 
 #########################################################
 echo "${green}Install Softwares ${reset}"
