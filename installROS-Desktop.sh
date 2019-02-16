@@ -111,27 +111,27 @@ pip install --user -U --ignore-installed tensorflow-gpu
 pip install --user keras
 
 #########################################################
-echo "${green}Install Texworks and TexLive ...${reset}"
-sudo apt-get -y install texworks
-sudo apt-get -y install texlive-full
+# echo "${green}Install Texworks and TexLive ...${reset}"
+# sudo apt-get -y install texworks
+# sudo apt-get -y install texlive-full
 
 
 #########################################################
 # Install CUDA 9.0
-echo "${green}install cuda 9.0...${reset}"
+echo "${green}install cuda 10.0...${reset}"
 cd ~/Downloads/
-wget -O ~/Downloads/cuda.deb "http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_9.0.176-1_amd64.deb"
+wget -O ~/Downloads/cuda.deb "https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_10.0.130-1_amd64.deb"
 sudo dpkg -i cuda.deb
-sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub
+sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub
 sudo apt-get update
-sudo apt-get -y install cuda-9-0
+sudo apt-get -y install cuda
 
 #########################################################
 # Install cdDNN
 echo "${green}install cudnn...${reset}"
 # https://developer.nvidia.com/rdp/cudnn-download
 cd ~/Downloads
-tar -xzvf cudnn-9.0-linux-x64-v7.1.tgz # change the name as may have newer versions
+tar -xzvf cudnn.tgz # change the name as may have newer versions
 sudo cp cuda/include/cudnn.h /usr/local/cuda/include
 sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
 sudo chmod a+r /usr/local/cuda/include/cudnn.h
