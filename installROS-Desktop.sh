@@ -117,8 +117,8 @@ pip install --user keras
 
 
 #########################################################
-# Install CUDA 9.0
-echo "${green}install cuda 10.0...${reset}"
+# Install CUDA
+echo "${green}install cuda ...${reset}"
 cd ~/Downloads/
 wget -O ~/Downloads/cuda.deb "https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_10.0.130-1_amd64.deb"
 sudo dpkg -i cuda.deb
