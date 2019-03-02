@@ -74,7 +74,9 @@ sudo gdebi sublime.deb
 #########################################################
 echo "${green}Install gtsam ${reset}"
 cd ~/Downloads/
-git clone https://bitbucket.org/gtborg/gtsam.git
+# git clone https://bitbucket.org/gtborg/gtsam.git
+wget -O ~/Downloads/gtsam.zip https://github.com/borglab/gtsam/archive/4.0.0-alpha2.zip
+unzip gtsam.zip -d ~/Downloads/gtsam
 cd ~/Downloads/gtsam
 mkdir build
 cd build
