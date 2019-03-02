@@ -87,7 +87,7 @@ echo "${green}install jupyter ...${reset}"
 sudo apt -y install python-pip
 sleep 3
 pip install --upgrade pip
-
+sleep 3
 #########################################################
 # Install Pytorch
 echo "${green}install pytorch ...${reset}"
@@ -112,8 +112,8 @@ pip install --user keras
 
 #########################################################
 # echo "${green}Install Texworks and TexLive ...${reset}"
-# sudo apt-get -y install texworks
-# sudo apt-get -y install texlive-full
+sudo apt-get -y install texworks
+sudo apt-get -y install texlive-full
 
 
 #########################################################
@@ -124,7 +124,7 @@ wget -O ~/Downloads/cuda.deb "https://developer.download.nvidia.com/compute/cuda
 sudo dpkg -i cuda.deb
 sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub
 sudo apt-get update
-sudo apt-get -y install cuda
+sudo apt-get -y --allow-unauthenticated install cuda
 
 #########################################################
 # Install cdDNN
