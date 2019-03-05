@@ -87,15 +87,15 @@ sudo make install -j8
 echo "${green}Install libpointmatcher ${reset}"
 cd ~/Downloads/
 git clone https://github.com/ethz-asl/libnabo.git
-mkdir build
-cd build
+cd ~/Downloads/libnabo && mkdir build && cd build
 cmake ..
+make
 sudo make install -j8
 cd ~/Downloads/
 git clone https://github.com/ethz-asl/libpointmatcher.git
-mkdir build
-cd build
-cmake ..
+cd ~/Downloads/libpointmatcher && mkdir build && cd build
+cmake .. 
+make
 sudo make install -j8
 
 #########################################################
