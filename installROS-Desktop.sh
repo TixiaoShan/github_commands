@@ -84,6 +84,21 @@ cmake ..
 sudo make install -j8
 
 #########################################################
+echo "${green}Install libpointmatcher ${reset}"
+cd ~/Downloads/
+git clone https://github.com/ethz-asl/libnabo.git
+mkdir build
+cd build
+cmake ..
+sudo make install -j8
+cd ~/Downloads/
+git clone https://github.com/ethz-asl/libpointmatcher.git
+mkdir build
+cd build
+cmake ..
+sudo make install -j8
+
+#########################################################
 # Install jupyter notebook
 echo "${green}install jupyter ...${reset}"
 sudo apt -y install python-pip
