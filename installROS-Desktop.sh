@@ -89,14 +89,14 @@ cd ~/Downloads/
 git clone https://github.com/ethz-asl/libnabo.git
 cd ~/Downloads/libnabo && mkdir build && cd build
 cmake ..
-make
-sudo make install -j8
+make -j8
+sudo make install
 cd ~/Downloads/
-git clone https://github.com/ethz-asl/libpointmatcher.git
+git clone https://github.com/ANYbotics/libpointmatcher.git
 cd ~/Downloads/libpointmatcher && mkdir build && cd build
 cmake .. 
-make
-sudo make install -j8
+make -j8
+sudo make install
 
 #########################################################
 # Install jupyter notebook
