@@ -6,6 +6,10 @@ reset=`tput sgr0`
 echo "${green}Begin to install ...${reset}"
 
 #########################################################
+# Adjust system time
+timedatectl set-local-rtc 1 --adjust-system-clock
+
+#########################################################
 # ROS Kinetic
 echo "${green}Begin to install ROS Kinetic...${reset}"
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
