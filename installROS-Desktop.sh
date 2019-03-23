@@ -7,7 +7,7 @@ echo "${green}Begin to install ...${reset}"
 
 #########################################################
 # Adjust system time
-timedatectl set-local-rtc 1 --adjust-system-clock
+#timedatectl set-local-rtc 1 --adjust-system-clock
 sudo apt-get install ntp
 timedatectl
 
