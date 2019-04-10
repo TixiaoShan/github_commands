@@ -124,8 +124,8 @@ pip install --user imageio
 pip install --user pandas
 pip install --user scikit-image
 pip install --user sklearn
-pip uninstall numpy
-pip install --user numpy==1.14.5
+# pip uninstall numpy
+# pip install --user numpy==1.14.5
 
 #########################################################
 # Install tensorflow
