@@ -90,19 +90,19 @@ cmake ..
 sudo make install -j8
 
 #########################################################
-echo "${green}Install libpointmatcher ${reset}"
-cd ~/Downloads/
-git clone https://github.com/ethz-asl/libnabo.git
-cd ~/Downloads/libnabo && mkdir build && cd build
-cmake ..
-make -j8
-sudo make install
-cd ~/Downloads/
-git clone https://github.com/ANYbotics/libpointmatcher.git
-cd ~/Downloads/libpointmatcher && mkdir build && cd build
-cmake .. 
-make -j8
-sudo make install
+# echo "${green}Install libpointmatcher ${reset}"
+# cd ~/Downloads/
+# git clone https://github.com/ethz-asl/libnabo.git
+# cd ~/Downloads/libnabo && mkdir build && cd build
+# cmake ..
+# make -j8
+# sudo make install
+# cd ~/Downloads/
+# git clone https://github.com/ANYbotics/libpointmatcher.git
+# cd ~/Downloads/libpointmatcher && mkdir build && cd build
+# cmake .. 
+# make -j8
+# sudo make install
 
 #########################################################
 # Install jupyter notebook
