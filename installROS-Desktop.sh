@@ -82,63 +82,12 @@ echo "${green}Install gtsam ${reset}"
 cd ~/Downloads/
 # git clone https://bitbucket.org/gtborg/gtsam.git
 wget -O ~/Downloads/gtsam.zip https://github.com/borglab/gtsam/archive/4.0.0-alpha2.zip
-unzip gtsam.zip -d ~/Downloads/gtsam
-cd ~/Downloads/gtsam
+unzip gtsam.zip -d ~/Downloads/
+cd ~/Downloads/4.0.0-alpha2/
 mkdir build
 cd build
 cmake ..
 sudo make install -j8
-
-#########################################################
-# echo "${green}Install libpointmatcher ${reset}"
-# cd ~/Downloads/
-# git clone https://github.com/ethz-asl/libnabo.git
-# cd ~/Downloads/libnabo && mkdir build && cd build
-# cmake ..
-# make -j8
-# sudo make install
-# cd ~/Downloads/
-# git clone https://github.com/ANYbotics/libpointmatcher.git
-# cd ~/Downloads/libpointmatcher && mkdir build && cd build
-# cmake .. 
-# make -j8
-# sudo make install
-
-#########################################################
-# Install jupyter notebook
-echo "${green}install jupyter ...${reset}"
-sudo apt -y install python-pip
-sleep 3
-pip install --upgrade pip
-sleep 3
-#########################################################
-# Install Pytorch
-echo "${green}install pytorch ...${reset}"
-pip install --user torch
-pip install --user torchvision
-
-pip install --user launchpadlib
-pip install --user testresources
-pip install --user jupyter
-pip install --user imageio
-pip install --user pandas
-pip install --user scikit-image
-pip install --user sklearn
-# pip uninstall numpy
-# pip install --user numpy==1.14.5
-
-#########################################################
-# Install tensorflow
-echo "${green}install tensorflow ...${reset}"
-pip install --user -U --ignore-installed tensorflow-gpu
-pip install --user keras
-
-#########################################################
-# echo "${green}Install Texworks and TexLive ...${reset}"
-sudo apt-get -y install texworks
-sudo apt-get -y install texstudio
-sudo apt-get -y install texlive-full
-
 
 #########################################################
 # Install CUDA
@@ -163,6 +112,27 @@ sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
 echo "export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH" >> ~/.bashrc
 
 #########################################################
+# Install pip
+echo "${green}install pip ...${reset}"
+sudo apt -y install python-pip
+sleep 3
+pip install --upgrade pip
+sleep 3
+#########################################################
+# Install Python packages
+echo "${green}install Python packages ...${reset}"
+pip install --user torch
+pip install --user torchvision
+pip install --user launchpadlib
+pip install --user testresources
+pip install --user jupyter
+pip install --user imageio
+pip install --user pandas
+pip install --user scikit-image
+pip install --user sklearn
+pip install --user keras
+pip install --user -U --ignore-installed tensorflow-gpu
+#########################################################
 #sgbteam
 #Single User License
 #EA7E-1153259
@@ -186,3 +156,24 @@ echo "export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH" >> ~/.bashr
 ########################################################
 # Edit ros kill timeout
 # /opt/ros/kinetic/lib/python2.7/dist-packages/roslaunch/nodeprocess.py
+
+#########################################################
+# echo "${green}Install libpointmatcher ${reset}"
+# cd ~/Downloads/
+# git clone https://github.com/ethz-asl/libnabo.git
+# cd ~/Downloads/libnabo && mkdir build && cd build
+# cmake ..
+# make -j8
+# sudo make install
+# cd ~/Downloads/
+# git clone https://github.com/ANYbotics/libpointmatcher.git
+# cd ~/Downloads/libpointmatcher && mkdir build && cd build
+# cmake .. 
+# make -j8
+# sudo make install
+
+#########################################################
+# echo "${green}Install Texworks and TexLive ...${reset}"
+# sudo apt-get -y install texworks
+# sudo apt-get -y install texstudio
+# sudo apt-get -y install texlive-full
