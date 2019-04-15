@@ -22,6 +22,7 @@ sudo apt-get install -y ros-kinetic-desktop-full
 sudo rosdep init
 rosdep update
 # Environment Setup
+echo "\n" >> ~/.bashrc
 echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
@@ -44,6 +45,7 @@ sudo apt-get install -y openssh-server
 #########################################################
 # ros ip setup
 echo "${green}ROS ip setup${reset}"
+echo "\n" >> ~/.bashrc
 echo "export ROS_MASTER_URI=http://localhost:11311" >> ~/.bashrc
 echo "export ROS_HOSTNAME=localhost" >> ~/.bashrc
 
