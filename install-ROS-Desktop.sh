@@ -40,7 +40,7 @@ echo "export ROS_HOSTNAME=localhost" >> ~/.bashrc
 
 ########################################################
 # Edit ros kill timeout
-# /opt/ros/kinetic/lib/python2.7/dist-packages/roslaunch/nodeprocess.py
+# sudo gedit /opt/ros/kinetic/lib/python2.7/dist-packages/roslaunch/nodeprocess.py
 
 #########################################################
 # echo "${green}Install libpointmatcher ${reset}"
