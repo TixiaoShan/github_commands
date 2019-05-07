@@ -35,6 +35,7 @@ sudo apt-get install -y exfat-fuse
 sudo apt-get install -y exfat-utils
 sudo apt-get install -y terminator
 sudo apt-get install -y ffmpeg
+sudo apt-get install -y unrar
 
 #########################################################
 echo "${green}Install Softwares ${reset}"
