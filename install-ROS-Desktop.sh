@@ -38,6 +38,13 @@ echo "\n" >> ~/.bashrc
 echo "export ROS_MASTER_URI=http://localhost:11311" >> ~/.bashrc
 echo "export ROS_HOSTNAME=localhost" >> ~/.bashrc
 
+#########################################################
+# git setup
+git config --global user.name "TixiaoShan"
+git config --global user.email "tixiao.shan@gmail.com"
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=360000'
+
 ########################################################
 # Edit ros kill timeout
 # sudo gedit /opt/ros/kinetic/lib/python2.7/dist-packages/roslaunch/nodeprocess.py
