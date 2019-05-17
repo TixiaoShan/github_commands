@@ -86,5 +86,9 @@ Turn on the credential helper so that Git will save your password in memory for 
 2. Check status:
 
     `git status`
+   
+3. Update combo:
+
+    `git add * && git commit -m "something" && git push origin master`
 
 3. [Many other commands](https://github.com/joshnh/Git-Commands)
