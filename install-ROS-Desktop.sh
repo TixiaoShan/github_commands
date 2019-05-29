@@ -29,6 +29,7 @@ echo "${green}install ROS packages${reset}"
 sudo apt-get install -y ros-kinetic-slam-gmapping
 sudo apt-get install -y ros-kinetic-navigation
 sudo apt-get install -y ros-kinetic-octomap*
+sudo apt-get install -y ros-kinetic-pointcloud-to-laserscan
 sudo apt-get install -y libignition-math2-dev # for velodyne gazebo plugin
 
 #########################################################
