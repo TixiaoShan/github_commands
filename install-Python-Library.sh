@@ -10,7 +10,7 @@ echo "${green}Begin to install ...${reset}"
 echo "${green}install pip ...${reset}"
 sudo apt -y install python-pip
 sleep 3
-pip install --upgrade pip
+pip install --upgrade --user pip
 sleep 3
 #########################################################
 # Install Python packages
