@@ -41,6 +41,7 @@
    `git pull origin master`
 
 ### Set Username
+
 1. set Git username for every repository on your computer:
 
    `git config --global user.name "TixiaoShan"`
