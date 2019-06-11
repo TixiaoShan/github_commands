@@ -24,5 +24,6 @@ pip install --user imageio
 pip install --user pandas
 pip install --user scikit-image
 pip install --user sklearn
+pip install --user seaborn
 pip install --user keras
 pip install --user -U --ignore-installed tensorflow-gpu
