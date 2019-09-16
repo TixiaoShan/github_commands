@@ -10,5 +10,5 @@ sudo add-apt-repository "deb http://realsense-hw-public.s3.amazonaws.com/Debian/
 sudo apt-get update
 
 # Install the libraries
-sudo apt-get install librealsense2-dkms
-sudo apt-get install librealsense2-utils
+sudo apt-get install -y librealsense2-dkms
+sudo apt-get install -y librealsense2-utils
