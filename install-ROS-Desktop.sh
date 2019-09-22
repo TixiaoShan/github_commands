@@ -32,6 +32,7 @@ sudo apt-get install -y ros-kinetic-octomap*
 sudo apt-get install -y ros-kinetic-pointcloud-to-laserscan
 sudo apt-get install -y ros-kinetic-jackal-*
 sudo apt-get install -y ros-kinetic-velodyne-*
+sudo apt-get install -y ros-kinetic-teb-local-planner
 sudo apt-get install -y libignition-math2-dev # for velodyne gazebo plugin
 
 #########################################################
@@ -40,6 +41,7 @@ echo "${green}ROS ip setup${reset}"
 echo "\n" >> ~/.bashrc
 echo "export ROS_MASTER_URI=http://localhost:11311" >> ~/.bashrc
 echo "export ROS_HOSTNAME=localhost" >> ~/.bashrc
+echo "\n" >> ~/.bashrc
 
 #########################################################
 # git setup
