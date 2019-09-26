@@ -37,6 +37,7 @@ sudo apt-get install -y ros-kinetic-teb-local-planner
 sudo apt-get install -y ros-kinetic-imu-transformer
 sudo apt-get install -y ros-kinetic-librealsense2
 sudo apt-get install -y ros-kinetic-realsense2-camera
+sudo apt-get install -y ros-kinetic-microstrain-mips
 sudo apt-get install -y ros-kinetic-pointcloud-to-laserscan
 sudo apt-get install -y libignition-math2-dev # for velodyne gazebo plugin
 
