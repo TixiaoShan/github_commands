@@ -24,16 +24,20 @@ source ~/.bashrc
 sudo apt-get install -y python-rosinstall python-rosinstall-generator python-wstool build-essential
 
 #########################################################
-# ros packaged
+# ros package
 echo "${green}install ROS packages${reset}"
 sudo apt-get install -y ros-kinetic-slam-gmapping
 sudo apt-get install -y ros-kinetic-navigation
 sudo apt-get install -y ros-kinetic-octomap*
-sudo apt-get install -y ros-kinetic-pointcloud-to-laserscan
 sudo apt-get install -y ros-kinetic-jackal-*
 sudo apt-get install -y ros-kinetic-velodyne-*
 sudo apt-get install -y ros-kinetic-tf-*
+sudo apt-get install -y ros-kinetic-robot-localization
 sudo apt-get install -y ros-kinetic-teb-local-planner
+sudo apt-get install -y ros-kinetic-imu-transformer
+sudo apt-get install -y ros-kinetic-librealsense2
+sudo apt-get install -y ros-kinetic-realsense2-camera
+sudo apt-get install -y ros-kinetic-pointcloud-to-laserscan
 sudo apt-get install -y libignition-math2-dev # for velodyne gazebo plugin
 
 #########################################################
@@ -46,10 +50,10 @@ echo "\n" >> ~/.bashrc
 
 #########################################################
 # git setup
-git config --global user.name "TixiaoShan"
-git config --global user.email "tixiao.shan@gmail.com"
-git config --global credential.helper cache
-git config --global credential.helper 'cache --timeout=360000'
+# git config --global user.name "TixiaoShan"
+# git config --global user.email "tixiao.shan@gmail.com"
+# git config --global credential.helper cache
+# git config --global credential.helper 'cache --timeout=360000'
 
 ########################################################
 # Edit ros kill timeout
