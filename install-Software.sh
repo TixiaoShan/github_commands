@@ -5,6 +5,8 @@ green=`tput setaf 2`
 reset=`tput sgr0`
 echo "${green}Begin to install ...${reset}"
 
+sudo adduser $USER dialout
+
 #########################################################
 # Adjust system time
 #timedatectl set-local-rtc 1 --adjust-system-clock
