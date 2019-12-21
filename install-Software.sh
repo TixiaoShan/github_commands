@@ -75,6 +75,7 @@ sudo make install -j4
 
 #########################################################
 # https://gist.github.com/dinhchi27/80d49460fd4529e21e6b60cc77c79b54
+# https://www.cnblogs.com/xinglejun/p/10682847.html
 
 # Just go to Preferences -> Settings-User and add there: "update_check": false,
 
