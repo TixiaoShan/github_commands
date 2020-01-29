@@ -39,7 +39,6 @@ sudo apt-get install -y terminator
 sudo apt-get install -y ffmpeg
 sudo apt-get install -y unrar
 sudo apt-get install -y libgeographic-dev
-sudo apt-get install -y geographiclib-tools
 
 #########################################################
 echo "${green}Install Softwares ${reset}"
