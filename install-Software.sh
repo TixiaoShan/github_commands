@@ -77,10 +77,10 @@ cd ceres-bin && cmake ..
 sudo make install -j4
 
 #########################################################
-# echo "${green}Install Texworks and TexLive ...${reset}"
-# sudo apt-get -y install texworks
-# sudo apt-get -y install texstudio
-# sudo apt-get -y install texlive-full
+echo "${green}Install Texworks and TexLive ...${reset}"
+sudo apt-get -y install texworks
+sudo apt-get -y install texstudio
+sudo apt-get -y install texlive-full
 
 
 #########################################################
