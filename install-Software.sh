@@ -73,7 +73,7 @@ sudo apt-get install -y libeigen3-dev
 cd ~/Downloads
 git clone https://ceres-solver.googlesource.com/ceres-solver ceres
 cd ceres && mkdir ceres-bin
-cd ceres && cmake ..
+cd ceres-bin && cmake ..
 sudo make install -j4
 
 #########################################################
