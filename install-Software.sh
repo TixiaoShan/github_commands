@@ -74,8 +74,7 @@ cd ~/Downloads
 git clone https://ceres-solver.googlesource.com/ceres-solver ceres
 cd ceres && mkdir ceres-bin
 cd ceres && cmake ..
-make -j20
-sudo make install
+sudo make install -j4
 
 #########################################################
 # echo "${green}Install Texworks and TexLive ...${reset}"
