@@ -66,6 +66,18 @@ sudo make install -j4
 # sudo make install -j4
 
 #########################################################
+echo "${green}Install Ceres ${reset}"
+sudo apt-get install -y libgoogle-glog-dev
+sudo apt-get install -y libatlas-base-dev
+sudo apt-get install -y libeigen3-dev
+cd ~/Downloads
+git clone https://ceres-solver.googlesource.com/ceres-solver ceres
+cd ceres && mkdir ceres-bin
+cd ceres && cmake ..
+make -j20
+sudo make install
+
+#########################################################
 # echo "${green}Install Texworks and TexLive ...${reset}"
 # sudo apt-get -y install texworks
 # sudo apt-get -y install texstudio
