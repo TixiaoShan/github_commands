@@ -52,18 +52,12 @@ sudo gdebi sublime.deb
 
 #########################################################
 echo "${green}Install gtsam ${reset}"
-wget -O ~/Downloads/gtsam.zip https://github.com/borglab/gtsam/archive/4.0.0-alpha2.zip
+wget -O ~/Downloads/gtsam.zip https://github.com/borglab/gtsam/archive/4.0.2.zip
 cd ~/Downloads/ && unzip gtsam.zip -d ~/Downloads/
-cd ~/Downloads/gtsam-4.0.0-alpha2/
+cd ~/Downloads/gtsam-4.0.2/
 mkdir build && cd build
-cmake ..
-sudo make install -j4
-# wget -O ~/Downloads/gtsam.zip https://github.com/borglab/gtsam/archive/4.0.0.zip
-# cd ~/Downloads/ && unzip gtsam.zip -d ~/Downloads/
-# cd ~/Downloads/gtsam-4.0.0/
-# mkdir build && cd build
-# cmake -DGTSAM_USE_SYSTEM_EIGEN=ON ..
-# sudo make install -j4
+cmake -DGTSAM_BUILD_WITH_MARCH_NATIVE=OFF ..
+sudo make install -j8
 
 #########################################################
 echo "${green}Install Ceres ${reset}"
