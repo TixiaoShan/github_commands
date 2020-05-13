@@ -61,13 +61,15 @@ sudo make install -j8
 
 #########################################################
 echo "${green}Install Ceres ${reset}"
+cd ~/Downloads
+git clone https://ceres-solver.googlesource.com/ceres-solver
+wget -O ~/Downloads/eigen.deb "http://ftp.br.debian.org/debian/pool/main/e/eigen3/libeigen3-dev_3.3.7-1_all.deb"
+cd ~/Downloads && sudo gdebi eigen.deb
 sudo apt-get install -y libgoogle-glog-dev
 sudo apt-get install -y libatlas-base-dev
-sudo apt-get install -y libeigen3-dev
-cd ~/Downloads
-git clone https://ceres-solver.googlesource.com/ceres-solver ceres
-cd ceres && mkdir ceres-bin
-cd ceres-bin && cmake ..
+cd ~/Downloads/ceres-solver
+mkdir ceres-bin && cd ceres-bin
+cmake ..
 sudo make install -j4
 
 #########################################################
