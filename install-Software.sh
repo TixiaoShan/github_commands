@@ -6,6 +6,7 @@ reset=`tput sgr0`
 echo "${green}Begin to install ...${reset}"
 
 sudo adduser $USER dialout
+sleep 3
 
 #########################################################
 # Adjust system time
