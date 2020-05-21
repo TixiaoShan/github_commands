@@ -103,3 +103,18 @@ sudo apt-get -y install texlive-full
 # sudo gedit /etc/fstab
 # UUID=CA009B90009B825D /media/ntfs ntfs rw,nosuid,nodev,noatime,allow_other 0 0
 
+#########################################################
+# echo "${green}Install libpointmatcher ${reset}"
+# cd ~/Downloads/
+# git clone https://github.com/ethz-asl/libnabo.git
+# cd ~/Downloads/libnabo && mkdir build && cd build
+# cmake ..
+# make -j8
+# sudo make install
+# cd ~/Downloads/
+# git clone https://github.com/ANYbotics/libpointmatcher.git
+# cd ~/Downloads/libpointmatcher && mkdir build && cd build
+# cmake .. 
+# make -j8
+# sudo make install
+
