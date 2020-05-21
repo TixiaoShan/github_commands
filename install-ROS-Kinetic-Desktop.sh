@@ -19,7 +19,7 @@ rosdep update
 echo "\n" >> ~/.bashrc
 echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
-source ~/.bashrc
+. ~/.bashrc
 # python
 sudo apt-get install -y python-rosinstall python-rosinstall-generator python-wstool build-essential
 
