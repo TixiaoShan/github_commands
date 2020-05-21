@@ -39,7 +39,6 @@ sudo apt-get install -y exfat-utils
 sudo apt-get install -y terminator
 sudo apt-get install -y ffmpeg
 sudo apt-get install -y unrar
-sudo apt-get install -y libgeographic-dev
 
 #########################################################
 echo "${green}Install Softwares ${reset}"
@@ -50,6 +49,11 @@ wget -O ~/Downloads/chrome.deb "https://dl.google.com/linux/direct/google-chrome
 sudo gdebi chrome.deb
 wget -O ~/Downloads/sublime.deb "https://download.sublimetext.com/sublime-text_build-3176_amd64.deb"
 sudo gdebi sublime.deb
+
+#########################################################
+echo "${green}Install Eigen ${reset}"
+wget -O ~/Downloads/eigen.deb "http://ftp.br.debian.org/debian/pool/main/e/eigen3/libeigen3-dev_3.3.7-1_all.deb"
+cd ~/Downloads && sudo gdebi eigen.deb
 
 #########################################################
 echo "${green}Install gtsam ${reset}"
@@ -64,14 +68,12 @@ sudo make install -j8
 echo "${green}Install Ceres ${reset}"
 cd ~/Downloads
 git clone https://ceres-solver.googlesource.com/ceres-solver
-wget -O ~/Downloads/eigen.deb "http://ftp.br.debian.org/debian/pool/main/e/eigen3/libeigen3-dev_3.3.7-1_all.deb"
-cd ~/Downloads && sudo gdebi eigen.deb
 sudo apt-get install -y libgoogle-glog-dev
 sudo apt-get install -y libatlas-base-dev
 cd ~/Downloads/ceres-solver
 mkdir ceres-bin && cd ceres-bin
 cmake ..
-sudo make install -j4
+sudo make install -j8
 
 #########################################################
 echo "${green}Install Texworks and TexLive ...${reset}"
