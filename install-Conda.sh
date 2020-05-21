@@ -12,4 +12,4 @@ chmod +x ~/Downloads/conda.sh
 . ~/Downloads/conda.sh
 
 echo "${green}Configure conda${reset}"
-echo ". /home/tixiao/miniconda3/etc/profile.d/conda.sh" >> ~/.bashrc
+echo ". ~/miniconda3/etc/profile.d/conda.sh" >> ~/.bashrc
