@@ -39,7 +39,7 @@ sudo apt-get install -y exfat-utils
 sudo apt-get install -y terminator
 sudo apt-get install -y ffmpeg
 sudo apt-get install -y unrar
-sudo apt-get install -y  kazam
+sudo apt-get install -y kazam
 
 #########################################################
 echo "${green}Install Softwares ${reset}"
