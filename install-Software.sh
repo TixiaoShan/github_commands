@@ -78,7 +78,6 @@ sudo make install -j8
 
 #########################################################
 echo "${green}Install Texworks and TexLive ...${reset}"
-sudo apt-get -y install texworks
 sudo apt-get -y install texstudio
 sudo apt-get -y install texlive-full
 
