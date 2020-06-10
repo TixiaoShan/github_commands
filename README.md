@@ -44,11 +44,11 @@
 
 1. set Git username for every repository on your computer:
 
-   `git config --global user.name "TixiaoShan"`
+   `git config --global user.name "YourUserName"`
    
    Setting your Git username for a single repository:
    
-   `git config user.name "TixiaoShan"`
+   `git config user.name "YourUserName"`
    
    check username:
    
@@ -56,11 +56,11 @@
 
 2. set your email address for every repository on your computer
 
-   `git config --global user.email "tixiao.shan@gmail.com"`
+   `git config --global user.email "your@email.com"`
    
    Setting your email address for a single repository:
    
-   `git config user.email "tixiao.shan@gmail.com"`
+   `git config user.email "your@email.com"`
    
    check email address:
    
