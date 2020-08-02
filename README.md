@@ -77,6 +77,16 @@ Turn on the credential helper so that Git will save your password in memory for 
 2. Set the cache to timeout after 1 hour (setting is in seconds):
 
     `git config --global credential.helper 'cache --timeout=3600'`
+    
+### Delete Commits
+
+Reset the head to the number of commits back by 2 for example:
+
+   `git reset --hard HEAD~2`
+   
+and force pushed using:
+
+   `git push -f origin master`
 
 ### Other commands
 
