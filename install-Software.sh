@@ -17,6 +17,7 @@ timedatectl
 # install ssh server
 echo "${green}install SSH server${reset}"
 sudo apt-get install -y openssh-server
+sudo apt-get install -y sshpass
 
 #########################################################
 # Network Time Protocol
