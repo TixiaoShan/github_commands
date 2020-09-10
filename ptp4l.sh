@@ -36,6 +36,6 @@ cat /etc/systemd/system/phc2sys.service.d/override.conf
 # validate time
 while [ 1 ]
 do
-	sudo phc_ctl enp0s31f6 get && date +%s.%N
+	sudo phc_ctl $ETHERNET_NAME get && date +%s.%N
 	sleep 1
 done
