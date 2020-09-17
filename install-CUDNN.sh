@@ -1,15 +1,11 @@
 #!/bin/sh
 
 #########################################################
-# Install cdDNN
-echo "${green}install cudnn...${reset}"
+# Download
 # https://developer.nvidia.com/rdp/cudnn-download
-cd ~/Downloads
-tar -xzvf cudnn.tgz # change the name as may have newer versions
-sudo cp cuda/include/cudnn.h /usr/local/cuda/include
-sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
-sudo chmod a+r /usr/local/cuda/include/cudnn.h
-sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
+
+# Install - Section 2.3.2
+# https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html
 
 # ! add the following lines to your bashrc file
 # export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
