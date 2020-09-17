@@ -53,9 +53,9 @@ wget -O ~/Downloads/sublime.deb "https://download.sublimetext.com/sublime-text_b
 sudo gdebi sublime.deb
 
 #########################################################
-echo "${green}Install Eigen ${reset}"
-wget -O ~/Downloads/eigen.deb "http://ftp.br.debian.org/debian/pool/main/e/eigen3/libeigen3-dev_3.3.7-1_all.deb"
-cd ~/Downloads && sudo gdebi eigen.deb
+# echo "${green}Install Eigen ${reset}"
+# wget -O ~/Downloads/eigen.deb "http://ftp.br.debian.org/debian/pool/main/e/eigen3/libeigen3-dev_3.3.7-1_all.deb"
+# cd ~/Downloads && sudo gdebi eigen.deb
 
 #########################################################
 echo "${green}Install gtsam ${reset}"
