@@ -68,11 +68,11 @@ sudo make install -j8
 
 #########################################################
 echo "${green}Install Ceres ${reset}"
-cd ~/Downloads
-git clone https://ceres-solver.googlesource.com/ceres-solver
 sudo apt-get install -y libgoogle-glog-dev
 sudo apt-get install -y libatlas-base-dev
-cd ~/Downloads/ceres-solver
+cd ~/Downloads && wget ceres-solver.org/ceres-solver-1.14.0.tar.gz
+tar xvf ceres-solver-1.14.0.tar.gz
+cd ~/Downloads/ceres-solver-1.14.0
 mkdir ceres-bin && cd ceres-bin
 cmake ..
 sudo make install -j8
