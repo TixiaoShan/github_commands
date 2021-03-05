@@ -7,5 +7,5 @@ ffmpeg -r ${frameRate} \
        -i ${jpgName} \
        -vcodec libx264 \
        -crf 20 \
-       --vf "pad=ceil(iw/2)*2:ceil(ih/2)*2" \
+       -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2" \
        ${mp4Name}
