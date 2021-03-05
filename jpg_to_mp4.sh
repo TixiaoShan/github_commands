@@ -3,7 +3,9 @@ frameRate="60"
 jpgName="image_%03d.jpeg"
 mp4Name="output.mp4"
 
-ffmpeg -framerate ${frameRate} \
+ffmpeg -r ${frameRate} \
        -i ${jpgName} \
-       -c:v libx264 -profile:v high -crf 20 -pix_fmt yuv420p \
+       -vcodec libx264 \
+       -crf 20 \
+       --vf "pad=ceil(iw/2)*2:ceil(ih/2)*2" \
        ${mp4Name}
