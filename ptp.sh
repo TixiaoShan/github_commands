@@ -1,4 +1,5 @@
 #!/bin/sh
+# https://bit.ly/3ovCNb5
 
 # run "ifconfig" to get ethernet/wan port name on your own computer
 ETHERNET_NAME="eno1"
